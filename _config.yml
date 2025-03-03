@@ -9,7 +9,7 @@ description: "复旦24届经济本26届金融硕"  # 网站描述（SEO关键信
 # Social links
 social:
   github: liangshanqing  # GitHub用户名（自动生成主页链接）
-  email: sqliang24@m/fudan.edu.cn  # 联系邮箱
+  email: sqliang24@m.fudan.edu.cn  # 联系邮箱
   wechat: lsq9142196fly  # 微信号
   instagram: liang_shanqing  # Instagram用户名
   telephone: +86 17381909152  # 联系电话
@@ -24,7 +24,7 @@ plugins:
 
 paginate: 5
 paginate_path: "/page/:num"
-
+S
 
 # Pages Path
 defaults:

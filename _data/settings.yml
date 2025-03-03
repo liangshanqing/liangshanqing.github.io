@@ -1,6 +1,6 @@
 #-------------------------------
 # General Site Settings
-title: 欢迎来到我的个人主页！
+title: 梁善晴的个人主页
 logo: logo.png # You can add own logo.
 description: Dream big, start small.
 
@@ -23,18 +23,18 @@ wechat: "lsq9142196fly" # Add your WeChat handle
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier:  # add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------
 # Instagram Feed
-instafeed: # To enable the instafeed, use the value true. To turn off use the value false.
-instagram-profile: artemsheludko_ # Add instagram username
+instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+instagram-profile: liang_shanqing # Add instagram username
 
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics: G-S33QWD3FMD # Add your identifier. For example UA-99631805-1.
 
 
 #-------------------------------

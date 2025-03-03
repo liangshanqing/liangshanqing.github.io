@@ -2,13 +2,14 @@
 layout: default
 ---
 
+# 标签页标题
 <div class="arhive-head">
   <div class="container">
     <h1 class="archive-title">Tag: <span>{{ page.tag }}</span></h1>
   </div>
 </div>
 
-
+# 文章列表
 {% for post in page.posts %}
   {% include article-content.html %}
 {% endfor %}
