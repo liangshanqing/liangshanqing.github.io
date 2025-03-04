@@ -24,7 +24,6 @@ plugins:
 
 paginate: 5
 paginate_path: "/page/:num"
-S
 
 # Pages Path
 defaults:
