@@ -106,8 +106,8 @@
     transition: color 0.3s ease; // 添加颜色过渡效果
   
     &:hover {
-      color: #515151; // 悬停颜色
-      text-decoration: underline; // 鼠标悬停时显示下划线
+      color: #1c1c1c; // 悬停颜色
+      text-decoration: none; // 鼠标悬停时显示下划线
     }
   }
 
