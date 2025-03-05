@@ -6,22 +6,32 @@ layout: default
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | escape }}</title>
-    <!-- 引入highlight.js的黑色主题样式 -->
+    
+    <!-- 引入 highlight.js 的 Dracula 主题 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css"> 
+
     <style>
-		.container.page__content pre {
-			 background-color: #282c34; 
-			 color: #fff; 
-			 padding: 15px; 
-			 border-radius: 5px; 
-			 overflow-x: auto; 
-			 overflow-y: auto; 
-			 max-height: 600px; 
-			 font-family: 'Courier New', monospace; 
-			 box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); 
-		 }
-	 </style>
+        /* 代码块样式优化 */
+        .container.page__content pre {
+            padding: 15px; 
+            border-radius: 5px; 
+            overflow-x: auto; 
+            overflow-y: auto; 
+            max-height: 600px; 
+            font-family: 'Courier New', monospace; 
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); 
+        }
+
+        /* 让 highlight.js 主题生效 */
+        pre code {
+            display: block;
+            overflow-x: auto;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <div class="page-title-box">
@@ -51,10 +61,11 @@ layout: default
         </div>
     </div>
 
-    <!-- 引入highlight.js库 -->
+    <!-- 引入 highlight.js 库 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            hljs.configure({useBR: false}); // 确保换行正确显示
             hljs.highlightAll();
         });
     </script>
