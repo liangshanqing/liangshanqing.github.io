@@ -8,7 +8,7 @@ layout: default
     <title>{{ page.title | escape }}</title>
     
     <!-- 引入 highlight.js 的 Dracula 主题 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai-sublime.min.css"> 
 
     <style>
         /* 代码块样式优化 */
@@ -29,6 +29,24 @@ layout: default
             padding: 15px;
             border-radius: 5px;
         }
+
+		pre {
+		background-color: #1f1f1f;
+		color: #fff;
+		padding: 15px;
+		border-radius: 5px;
+		overflow-x: auto; /* 确保有横向滚动条 */
+		overflow-y: auto; /* 确保有纵向滚动条 */
+		max-height: 600px; /* 限制最大高度，超过就滚动 */
+		font-family: 'Courier New', monospace;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+		white-space: pre-wrap; /* 适用于换行 */
+		}
+
+		code {
+			font-size: 14px;
+			line-height: 1.5;
+		}
     </style>
 </head>
 
