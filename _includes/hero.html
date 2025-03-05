@@ -9,9 +9,16 @@
           <div class="hero__social">
             <span class="hero__social-title">社媒 |</span>
             {% include contact-link.html %}
-            <a href="{{site.baseurl}}/images/微信.jpg" target="_blank" class="hero__social-link wechat-link">
+            <a href="javascript:void(0);" class="hero__social-link wechat-link" id="wechat-link">
               <span>WeChat</span>
             </a>
+          </div>
+          <!-- 添加模态框 -->
+          <div id="wechat-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="{{site.baseurl}}/assets/images/微信.jpg" alt="WeChat QR Code">
+            </div>
           </div>
           <div class="hero__contact">
             <span class="hero__contact-title"><strong>邮箱 | </strong>sqliang24@m.fudan.edu.cn</span>

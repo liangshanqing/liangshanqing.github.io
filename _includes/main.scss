@@ -111,6 +111,45 @@
     }
   }
 
+/* 模态框背景 */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1000; /* 确保在最上层 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+  }
+  
+  /* 模态框内容 */
+  .modal-content {
+    position: relative;
+    background-color: #fff; /* 白色背景 */
+    margin: 10% auto; /* 居中 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* 模态框宽度 */
+    border-radius: 10px; /* 圆角 */
+    text-align: center; /* 内容居中 */
+  }
+  
+  /* 关闭按钮 */
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000; /* 鼠标悬停时变黑色 */
+  }
+
 /* >>>>>>>>>>>>>> :: 4-Layouts <<<<<<<<<<<<<<< */
 
 // 4.1 Page-home
