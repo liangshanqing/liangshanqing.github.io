@@ -4,38 +4,22 @@ layout: default
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | escape }}</title>
+    <!-- 引入highlight.js的黑色主题样式 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css"> 
     <style>
-        body {
-            background-color: #000; /* 将页面主体背景设为黑色 */
-            color: #fff; /* 文字颜色设为白色 */
-            font-family: Arial, sans-serif; /* 设置字体，可按需替换 */
-        }
-       .page__content {
-            padding: 20px; /* 页面内容区域增加内边距，使其布局更合理 */
-        }
        .page__content pre {
-            background-color: #282c34;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-            overflow-y: auto;
-            max-height: 500px;
-            font-family: monospace;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: #61dafb; /* 标题设置为类似代码高亮的浅蓝色，增加辨识度 */
-        }
-        a {
-            color: #61dafb; /* 链接颜色也设为浅蓝色，与标题统一风格 */
-            text-decoration: none; /* 去除默认下划线 */
-        }
-        a:hover {
-            text-decoration: underline; /* 鼠标悬停时显示下划线 */
+            /* 进一步优化代码块样式 */
+            background-color: #282c34; /* 深黑色背景 */
+            color: #fff; /* 白色文字 */
+            padding: 15px; /* 增加内边距，让代码更舒展 */
+            border-radius: 5px; /* 圆角 */
+            overflow-x: auto; /* 水平滚动 */
+            overflow-y: auto; /* 垂直滚动 */
+            max-height: 600px; /* 适当增加最大高度 */
+            font-family: 'Courier New', monospace; /* 等宽字体，显示代码更美观 */
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* 增加阴影效果，突出代码块 */
         }
     </style>
 </head>
@@ -68,6 +52,7 @@ layout: default
         </div>
     </div>
 
+    <!-- 引入highlight.js库 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
