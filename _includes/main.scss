@@ -98,6 +98,19 @@
 // 3.9 Instagram
 @import '3-modules/footer';
 
+// 3.10 WeChat
+.wechat-link {
+    margin-left: 10px; // 调整间距
+    color: #a0a0a0; // 默认颜色
+    text-decoration: none; // 去掉下划线
+    transition: color 0.3s ease; // 添加颜色过渡效果
+  
+    &:hover {
+      color: #515151; // 悬停颜色
+      text-decoration: underline; // 鼠标悬停时显示下划线
+    }
+  }
+
 /* >>>>>>>>>>>>>> :: 4-Layouts <<<<<<<<<<<<<<< */
 
 // 4.1 Page-home

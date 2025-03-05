@@ -14,3 +14,20 @@
 <script src="{{ site.baseurl }}/js/vendors/instafeed.min.js"></script>
 <script src="{{ site.baseurl }}/js/vendors/jquery.fitvids.js"></script>
 <script src="{{ site.baseurl }}/js/common.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // 获取所有WeChat链接
+    const wechatLinks = document.querySelectorAll('.hero__social-link[href$=".png"]');
+    
+    // 为每个链接添加点击事件
+    wechatLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // 阻止默认跳转行为
+        const imgUrl = this.getAttribute('href'); // 获取图片URL
+        const popup = window.open('', 'WeChat QR Code', 'width=400,height=400'); // 打开新窗口
+        popup.document.write(`<img src="${imgUrl}" alt="WeChat QR Code" style="width:100%;height:100%;">`); // 插入图片
+        popup.document.close();
+      });
+    });
+  });
+</script>

@@ -1,27 +1,22 @@
 ---
 layout: default
 ---
-# 文章标题和元数据
 <div class="container">
   <div class="post-title-box">
     <div class="row">
       <div class="col col-10 push-2 col-11 push-t-1 col-m-12 push-m-0">
-        # 文章发布时间
         <span class="post__date">
           <time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%b %d, %Y'}}</time>
         </span>
 
-        # 文章标题
         <h1 class="post-title">{{ page.title | escape }}</h1>
 
-        # 这里显示文章作者，数据来自 _data/settings.yml，即 site.data.settings.author.name
         <div class="post__info">
           <div class="post__author">
             <span>By</span>
             <a href="{{ site.baseurl }}/about/" class="author-name">{{site.data.settings.author.name}}</a>
           </div>
 
-          # 渲染文章标签，每个标签都会变成一个超链接，跳转到 /tag/xxx/ 过滤对应标签的文章
           {% if page.tags.size >= 1 %}
           <div class="post__tags">
             {% for tag in page.tags %}
@@ -34,7 +29,6 @@ layout: default
     </div>
   </div>
 
-  # 文章头图
   {% assign no-image = nil %}
   {% if page.image %}
     <div class="post__head">
@@ -46,7 +40,6 @@ layout: default
 
   </div>
 
-  # 文章内容
   <div class="container">
   <div class="row">
     <!-- begin post -->
@@ -56,7 +49,6 @@ layout: default
         {{ content }}
       </div>
 
-      # 文章底部的分享按钮
       <div class="post__share">
         <span class="share__title">Share this article:</span>
         <ul class="share__list list-reset">
@@ -89,7 +81,6 @@ layout: default
     </div>
   </div>
 
-  # 文章底部的导航
   <div class="container">
   <div class="post__navigation">
     {% if page.previous.url %}
